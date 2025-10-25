@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="601.0" minHeight="-Infinity" minWidth="402.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6dbce3;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gymmanager.controllers.RegistrationController">
+   <children>
+      <TextField fx:id="surnameField" layoutX="23.0" layoutY="99.0" prefHeight="37.0" prefWidth="164.0" promptText="Прізвище" />
+      <TextField fx:id="nameField" layoutX="217.0" layoutY="99.0" prefHeight="37.0" prefWidth="164.0" promptText="Ім'я" />
+      <TextField fx:id="fathersnameField" layoutX="413.0" layoutY="99.0" prefHeight="37.0" prefWidth="164.0" promptText="По-батькові" />
+      <Button id="loginButton" fx:id="registrationButton" layoutX="222.0" layoutY="333.0" mnemonicParsing="false" onAction="#onRegistrationClick" prefHeight="37.0" prefWidth="154.0" style="-fx-background-color: #0a77ad;" text="Зареєструватись" textFill="#f5f5f5">
+         <font>
+            <Font name="Candara Bold" size="15.0" />
+         </font>
+      </Button>
+      <PasswordField id="passwordField" fx:id="passwordField" layoutX="199.0" layoutY="244.0" prefHeight="37.0" prefWidth="203.0" promptText="Введіть пароль" />
+      <TextField id="emailField" fx:id="emailField" layoutX="199.0" layoutY="182.0" prefHeight="37.0" prefWidth="203.0" promptText="Введіть email" />
+      <Text fill="WHITE" layoutX="181.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регістрація" textAlignment="CENTER" wrappingWidth="236.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Label id="registrationText" fx:id="loginText" layoutX="262.0" layoutY="303.0" onMouseClicked="#onLoginTextClick" style="-fx-underline: true;" text="Вже є аккаунт" textFill="#001eff" />
+      <Label fx:id="warningText" layoutX="437.0" layoutY="336.0" prefHeight="37.0" prefWidth="154.0" text="Заповніть всі поля!!!" textAlignment="CENTER" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>

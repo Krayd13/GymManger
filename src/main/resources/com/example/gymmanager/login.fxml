@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="warningLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="601.0" style="-fx-background-color: #6dbce3;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gymmanager.controllers.LoginController">
+   <children>
+      <TextField id="emailField" fx:id="emailField" layoutX="199.0" layoutY="151.0" prefHeight="37.0" prefWidth="203.0" promptText="Введіть email" />
+      <Text fill="WHITE" layoutX="259.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вхід" textAlignment="CENTER" wrappingWidth="83.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button id="loginButton" fx:id="loginButton" layoutX="250.0" layoutY="310.0" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #0a77ad;" text="Ввійти" textFill="#f5f5f5">
+         <font>
+            <Font name="Candara Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label id="registrationText" fx:id="registrationText" layoutX="255.0" layoutY="273.0" onMouseClicked="#onRegistrationTextClick" style="-fx-underline: true;" text="Створити акаунт" textFill="#001eff" />
+      <PasswordField id="passwordField" fx:id="passwordField" layoutX="199.0" layoutY="216.0" prefHeight="37.0" prefWidth="203.0" promptText="Введіть пароль" />
+      <Label fx:id="warningText" layoutX="199.0" layoutY="364.0" prefHeight="17.0" prefWidth="203.0" text="Заповніть всі поля!!!" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
